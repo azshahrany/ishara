@@ -1,11 +1,68 @@
-<div align="center">
+# إشارة (Ishara) | منصة التواصل الإسعافي للصم وضعاف السمع
+### Emergency & Daily Communication Platform for the Deaf and Hard of Hearing
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+منصة ويب تقدمية (PWA) فائقة السرعة ومتخصصة في تسهيل التواصل الفوري للأشخاص الصم، ضعاف السمع، وغير القادرين على النطق في حالات الطوارئ والتواصل اليومي.
 
-  <h1>Built with AI Studio</h2>
+---
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## 🌟 المميزات الرئيسية (Key Features)
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+1. **استبيان الطوارئ الذكي في 5 ثوانٍ (Smart 5-Second Questionnaire):**
+   - تحديد نوع الطارئ، وموضع الإصابة، ومستوى الألم (0-10)، والقدرة على الكلام، ونوع المساعدة المطلوبة.
+2. **بطاقة الطوارئ الرسمية مع 4 قنوات إخراج:**
+   - **قراءة صوتية (Text-to-Speech):** نطق الرسالة الطارئة بوضوح بصوت فصيح.
+   - **وضع الشاشة المكبرة (Big Display):** شاشة عالية التباين لقراءتها عن بعد.
+   - **رمز الاستجابة السريعة (Live QR Code):** يتيح للمسعف أو المارة مسح الكود وقراءة الحالة فوراً على هواتفهم.
+   - **ملخص المسعفين (Handoff Summary):** تقرير طبي سريع ومباشر للكوادر الطبية.
+3. **جسر التواصل الثنائي (Two-Way Communication Bridge):**
+   - تقسيم تفاعلي: نصف للأصم (ردود سريعة + كتابة) ونصف للسامع (تحويل الصوت إلى نص 🎤).
+   - توضيح أدوار المتحدثين ومؤشرات بصرية لتنبيه المستخدم الأصم.
+4. **لوحة الأيقونات الموسعة (Big Visual Grid):**
+   - أيقونات سريعة بحجم كبير للحالات الشائعة والاحتياجات اليومية.
+5. **الاتصال المباشر بأرقام الطوارئ حسب الدولة:**
+   - دعم أرقام الإسعاف والشرطة والدفاع المدني لعدة دول (السعودية، الإمارات، الكويت، قطر، مصر، بريطانيا، أمريكا، دولي).
+6. **الذكاء الاصطناعي التكيفي (Gemini Flash):**
+   - تلخيص الحالات وتبسيط الكلام، مع نظام احتياطي فوري (Offline / High-Demand Fallback).
 
-</div>
+---
+
+## 🛠️ التقنيات المستخدمة (Tech Stack)
+
+- **Frontend:** React 18, TypeScript, Vite, Tailwind CSS, Motion (framer-motion), Lucide React.
+- **Backend:** Express, Node.js, @google/genai SDK (Google Gemini 3.8 Flash & Fallback models).
+- **Standards:** Progressive Web App (PWA), Web Speech API (Synthesis & Recognition).
+
+---
+
+## 🚀 تشغيل المشروع محلياً (Run Locally)
+
+### المتطلبات الأساسية
+- Node.js (v18+)
+- npm أو bun أو pnpm
+
+### خطوات التثبيت والتشغيل
+
+```bash
+# 1. تثبيت الحزم والمكتبات
+npm install
+
+# 2. إنشاء ملف المتغيرات البيئية
+cp .env.example .env
+
+# (اختياري) أضف مفتاح Gemini API في ملف .env:
+# GEMINI_API_KEY=your_key_here
+
+# 3. تشغيل خادم التطوير
+npm run dev
+```
+
+التطبيق سيعمل مباشرة على: `http://localhost:3000`
+
+---
+
+## 📦 البناء للإنتاج (Production Build)
+
+```bash
+npm run build
+npm start
+```
