@@ -1,68 +1,100 @@
-# إشارة (Ishara) | منصة التواصل الإسعافي للصم وضعاف السمع
-### Emergency & Daily Communication Platform for the Deaf and Hard of Hearing
+# Ishara (إشارة) | Emergency & Daily Communication Platform for the Deaf and Hard of Hearing
 
-منصة ويب تقدمية (PWA) فائقة السرعة ومتخصصة في تسهيل التواصل الفوري للأشخاص الصم، ضعاف السمع، وغير القادرين على النطق في حالات الطوارئ والتواصل اليومي.
-
----
-
-## 🌟 المميزات الرئيسية (Key Features)
-
-1. **استبيان الطوارئ الذكي في 5 ثوانٍ (Smart 5-Second Questionnaire):**
-   - تحديد نوع الطارئ، وموضع الإصابة، ومستوى الألم (0-10)، والقدرة على الكلام، ونوع المساعدة المطلوبة.
-2. **بطاقة الطوارئ الرسمية مع 4 قنوات إخراج:**
-   - **قراءة صوتية (Text-to-Speech):** نطق الرسالة الطارئة بوضوح بصوت فصيح.
-   - **وضع الشاشة المكبرة (Big Display):** شاشة عالية التباين لقراءتها عن بعد.
-   - **رمز الاستجابة السريعة (Live QR Code):** يتيح للمسعف أو المارة مسح الكود وقراءة الحالة فوراً على هواتفهم.
-   - **ملخص المسعفين (Handoff Summary):** تقرير طبي سريع ومباشر للكوادر الطبية.
-3. **جسر التواصل الثنائي (Two-Way Communication Bridge):**
-   - تقسيم تفاعلي: نصف للأصم (ردود سريعة + كتابة) ونصف للسامع (تحويل الصوت إلى نص 🎤).
-   - توضيح أدوار المتحدثين ومؤشرات بصرية لتنبيه المستخدم الأصم.
-4. **لوحة الأيقونات الموسعة (Big Visual Grid):**
-   - أيقونات سريعة بحجم كبير للحالات الشائعة والاحتياجات اليومية.
-5. **الاتصال المباشر بأرقام الطوارئ حسب الدولة:**
-   - دعم أرقام الإسعاف والشرطة والدفاع المدني لعدة دول (السعودية، الإمارات، الكويت، قطر، مصر، بريطانيا، أمريكا، دولي).
-6. **الذكاء الاصطناعي التكيفي (Gemini Flash):**
-   - تلخيص الحالات وتبسيط الكلام، مع نظام احتياطي فوري (Offline / High-Demand Fallback).
+An ultra-responsive Progressive Web App (PWA) designed to facilitate immediate, accessible communication for deaf, hard of hearing, and non-verbal individuals during critical emergencies and everyday interactions.
 
 ---
 
-## 🛠️ التقنيات المستخدمة (Tech Stack)
+## 👥 Project Information
 
-- **Frontend:** React 18, TypeScript, Vite, Tailwind CSS, Motion (framer-motion), Lucide React.
-- **Backend:** Express, Node.js, @google/genai SDK (Google Gemini 3.8 Flash & Fallback models).
-- **Standards:** Progressive Web App (PWA), Web Speech API (Synthesis & Recognition).
+### 👥 Group
+**Group 5**
+
+### 👩‍💻 Team Members
+- **Shahad Khalid**
+- **Amal Al-Zahrani**
+- **Bashayer Al-Sheibani**
+- **Asayil Al-qahtani**
+- **Abdulaziz Al-Shahrani**
+- **Raghad Al-Otaibi**
+- **Raghad Al-Anazi**
+
+### 🎓 Training Program
+**Vibe Coding Training Program**
+
+### 🏫 Organization
+**SDAIA Academy**
+
+### 🔗 GitHub
+[SDAIA Academy on GitHub](https://github.com/sdaia-academy)
 
 ---
 
-## 🚀 تشغيل المشروع محلياً (Run Locally)
+## 🌟 Key Features
 
-### المتطلبات الأساسية
-- Node.js (v18+)
-- npm أو bun أو pnpm
+1. **Smart 5-Second Emergency Questionnaire:**
+   - Rapidly communicates emergency type, affected body location, pain scale (0–10), speech ability, and requested assistance without typing.
+2. **Official Emergency SOS Card with 4 Output Channels:**
+   - **Text-to-Speech (TTS):** Clear, spoken audio broadcast in Arabic and English for responders and bystanders.
+   - **Full-Screen Big Display Mode:** High-contrast, large-typography view readable from a distance.
+   - **Live QR Code Generator:** Allows paramedics and first responders to scan the code with their smartphone camera to review the patient's condition on their own device.
+   - **Paramedic Handoff Summary:** Structured clinical briefing for rapid triage and vital sign evaluation.
+3. **Two-Way Communication Bridge:**
+   - Split-screen interface: Deaf user panel (1-tap quick replies + text input) and Hearing person panel (Voice-to-Text mic 🎤).
+   - Clear speaker turns and visual flash alerts for deaf users.
+4. **Giant Visual Icon Board & Expression Builder:**
+   - Large, high-contrast symbols for panic situations.
+   - Compound condition builder (e.g., Chest + Pressure Pain + 8/10 + Left side) that constructs precise, grammatically sound emergency sentences.
+5. **Direct Country Emergency Line Routing:**
+   - Integrated hotlines for Saudi Arabia, UAE, Kuwait, Qatar, Egypt, United States, United Kingdom, and International lines.
+6. **Adaptive AI Intelligence (Google Gemini 3.8 Flash):**
+   - Natural language summarization and phrase simplification with guaranteed offline/high-demand template fallbacks.
 
-### خطوات التثبيت والتشغيل
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React 18, TypeScript, Vite, Tailwind CSS, Motion (`motion/react`), Lucide React.
+- **Backend:** Express, Node.js, `@google/genai` SDK (Google Gemini 3.8 Flash & resilient fallback models).
+- **Accessibility Standards:** WCAG AA compliance, High Contrast Mode, Dynamic Text Scaling, Visual Alerts, Progressive Web App (PWA) readiness, Web Speech API (Synthesis & Recognition).
+
+---
+
+## 🚀 Getting Started Locally
+
+### Prerequisites
+- Node.js (v18 or higher)
+- npm, bun, or pnpm
+
+### Installation and Setup
 
 ```bash
-# 1. تثبيت الحزم والمكتبات
+# 1. Clone the repository
+git clone https://github.com/azshahrany/ishara-emergency-app.git
+cd ishara-emergency-app
+
+# 2. Install dependencies
 npm install
 
-# 2. إنشاء ملف المتغيرات البيئية
+# 3. Setup environment configuration
 cp .env.example .env
 
-# (اختياري) أضف مفتاح Gemini API في ملف .env:
+# (Optional) Add your Gemini API key in .env:
 # GEMINI_API_KEY=your_key_here
 
-# 3. تشغيل خادم التطوير
+# 4. Start the development server
 npm run dev
 ```
 
-التطبيق سيعمل مباشرة على: `http://localhost:3000`
+The application will be accessible at: `http://localhost:3000`
 
 ---
 
-## 📦 البناء للإنتاج (Production Build)
+## 📦 Production Build
 
 ```bash
+# Compile and package for production
 npm run build
+
+# Start the production server
 npm start
 ```
