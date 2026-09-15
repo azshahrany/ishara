@@ -1,6 +1,11 @@
 {
   "name": "إشارة | Ishara",
   "description": "جسر تواصل فوري للأشخاص الصم وضعاف السمع في حالات الطوارئ والتواصل اليومي",
-  "requestFramePermissions": ["microphone", "geolocation"],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "requestFramePermissions": [
+    "microphone",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
